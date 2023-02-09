@@ -22,6 +22,10 @@ mongo.connect(data.mongoLink, {useUnifiedTopology: true}, (err, client) => {
 })
 })
 
+setInterval(
+	console.log('I am Alive'), 25000 
+);
+
 bot.use(session())
 bot.use(stage.middleware())
 
